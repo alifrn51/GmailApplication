@@ -1,4 +1,4 @@
-package com.frn.gmailapplication
+package com.frn.gmailapplication.ui.model
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.*
@@ -11,92 +11,92 @@ sealed class DrawerMenuData(
     val isHeader: Boolean = false
 ) {
 
-    object AllInboxes:DrawerMenuData(
+    object AllInboxes: DrawerMenuData(
         icon = Icons.Outlined.AllInbox,
         title = "All inboxes"
     )
 
-    object Primary:DrawerMenuData(
+    object Primary: DrawerMenuData(
         icon = Icons.Outlined.StayPrimaryLandscape,
         title = "Primary"
     )
 
-    object Social:DrawerMenuData(
+    object Social: DrawerMenuData(
         icon = Icons.Outlined.SocialDistance,
         title = "Social"
     )
 
-    object Promotions:DrawerMenuData(
+    object Promotions: DrawerMenuData(
         icon = Icons.Outlined.Approval,
         title = "Promotions"
     )
 
-    object Starred:DrawerMenuData(
+    object Starred: DrawerMenuData(
         icon = Icons.Outlined.StarRate,
         title = "Starred"
     )
 
-    object Snoozed:DrawerMenuData(
+    object Snoozed: DrawerMenuData(
         icon = Icons.Outlined.Snooze,
         title = "Snoozed"
     )
 
-    object Important:DrawerMenuData(
+    object Important: DrawerMenuData(
         icon = Icons.Outlined.ImportantDevices,
         title = "Important"
     )
 
-    object Sent:DrawerMenuData(
+    object Sent: DrawerMenuData(
         icon = Icons.Outlined.Send,
         title = "Sent"
     )
 
-    object Schedule:DrawerMenuData(
+    object Schedule: DrawerMenuData(
         icon = Icons.Outlined.Schedule,
         title = "Schedule"
     )
 
-    object Outbox:DrawerMenuData(
+    object Outbox: DrawerMenuData(
         icon = Icons.Outlined.Outbox,
         title = "Outbox"
     )
-    object Draft:DrawerMenuData(
+    object Draft: DrawerMenuData(
         icon = Icons.Outlined.Drafts,
         title = "Drafts"
     )
 
-    object AllMail:DrawerMenuData(
+    object AllMail: DrawerMenuData(
         icon = Icons.Outlined.Mail,
         title = "All mail"
     )
 
-    object Calender:DrawerMenuData(
+    object Calender: DrawerMenuData(
         icon = Icons.Outlined.PermContactCalendar,
         title = "Calender"
     )
-    object Contacts:DrawerMenuData(
+    object Contacts: DrawerMenuData(
         icon = Icons.Outlined.Contacts,
         title = "Contacts"
     )
-    object Setting:DrawerMenuData(
+    object Setting: DrawerMenuData(
         icon = Icons.Outlined.Settings,
         title = "Settings"
     )
-    object Help:DrawerMenuData(
+    object Help: DrawerMenuData(
         icon = Icons.Outlined.Help,
         title = "Help & feedback"
     )
 
-    object Divider:DrawerMenuData(
+    object Divider: DrawerMenuData(
         isDivider = true
     )
 
-    object HeaderOne:DrawerMenuData(
+    object HeaderOne: DrawerMenuData(
         isHeader = true,
         title = "ALL LABELS"
     )
 
-    object HeaderTow:DrawerMenuData(
+    object HeaderTow: DrawerMenuData(
         isHeader = true,
         title = "GOOGLE APPS"
     )
